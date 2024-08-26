@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint">
+        content="width=device-width,intial-scale=1.0">
+        <title>JavaSCript Functions</title>
+    </head>
+    <body>
+        <script>
+            function findLeftMostVowelPosition(str) {
+                const vowels ='aeiouAEIOU';
+                for (let i = 0;i<str.length;i++) {
+                    if (vowels.includes(str[i])) {
+                        return i+1;
+                    }
+                }
+                return -1;
+            }
+            function reverseDigits(num) {
+                return
+                parseInt(num.toString().split('').reverse().join(''));
+            }
+            const testString="helloworld";
+            const testNumber=123456789;
+            
+            const leftMostVowelPosition =findLeftMostVowelPosition(testString);
+            const reversedNumber =reverseDigits(testNumber);
+
+            console.log("Left-most vowel position:",leftMostVowelPosition);
+            console.log("Reversednumber:",reversedNumber);
+            </script>
+    </body>
+ </html>

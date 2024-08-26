@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+    <script>
+        function findLeftMostVowel(str) {
+            // Define a regular expression to match vowels
+            var vowelRegex = /[aeiou]/i;
+            // Loop through each character in the string
+            for (var i = 0; i < str.length; i++) {
+                // Check if the character is a vowel
+                if (vowelRegex.test(str[i])) {
+                    // If it's a vowel, return its position
+                    return i + 1; // Adding 1 to match human-readable index
+                }
+            }
+            // If no vowel is found, return -1
+            return -1;
+        }
+
+        function reverseNumber(num) {
+            // Convert the number to a string and split it into an array of characters
+            var numArray = num.toString().split('');
+            // Reverse the array
+            var reversedArray = numArray.reverse();
+            // Join the array elements back into a string and convert it to a number
+            var reversedNum = parseInt(reversedArray.join(''));
+            // Return the reversed number
+            return reversedNum;
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    <p>Position of left-most vowel in "Hello": <span id="vowelPosition"></span></p>
+    <p>Reverse of number 12345: <span id="reversedNumber"></span></p>
+
+    <script>
+        // Call the functions and display the results
+        document.getElementById("vowelPosition").innerText = findLeftMostVowel("Hello");
+        document.getElementById("reversedNumber").innerText = reverseNumber(12345);
+    </script>
+</body>
+</html>
