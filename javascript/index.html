@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Even or Odd</h1>
+    <input type="text" id ="id"placeholder="enter your number"/>
+    <button onclick="check()">Check</button>
+
+    <script>
+        function check( ) {
+            let val = document.querySelector("#id").value;
+            if (val % 2 == 0) {
+                console.log("even");
+                alert("even");
+            } else  {
+                console.log("odd");
+                alert("odd");
+            }
+        }
+    </script>
+    
+</body>
+</html>
