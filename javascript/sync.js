@@ -20,7 +20,7 @@
 
 
 
-// listerens;
+// // listerens;
 
 // button = document.querySelector("#btn");
 // head=document.queryselector("#h1");
@@ -31,21 +31,22 @@
 
 
 
-function data(id, fun) {
-    setTimeout(() => {
-        console.log("id" + id);
-        if (fun) {
-            fun();
+// function data(id, fun) {
+//     setTimeout(() => {
+//         console.log("id" + id);
+//         if (fun) {
+//             fun();
 
-        }
+//         }
 
-    },2000);
+//     },2000);
 
-}
-data(1, () => {
-    data(2,() => {
-        data(3,() => {
-            data(4);
-        })
-    });
-});
+// }
+// console.log
+// data(1, () => {
+//     data(2,() => {
+//         data(3,() => {
+//             data(4);
+//         });
+//     });
+// });
